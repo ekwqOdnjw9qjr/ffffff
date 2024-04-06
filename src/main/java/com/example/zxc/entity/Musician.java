@@ -11,8 +11,8 @@ import java.util.List;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Entity
-@Table(name = "artists")
-public class Artist {
+@Table(name = "musicians")
+public class Musician {
     @Id
     @GeneratedValue
     @Column(name = "id")
@@ -20,10 +20,10 @@ public class Artist {
     @Column(name = "name")
     private String name;
     @ManyToMany
-    @JoinTable(name = "artists_pictures",
-            joinColumns = @JoinColumn(name = "picture_id", referencedColumnName = "id"),
-            inverseJoinColumns = @JoinColumn(name = "artist_id", referencedColumnName = "id"))
-    private List<Picture> pictures;
+    @JoinTable(name = "musicians_songs",
+            joinColumns = @JoinColumn(name = "song_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "musicians_id", referencedColumnName = "id"))
+    private List<Song> songs;
 
 }
 

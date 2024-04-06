@@ -13,8 +13,8 @@ import java.util.List;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Entity
-@Table(name = "pictures")
-public class Picture {
+@Table(name = "Songs")
+public class Song {
     @Id
     @GeneratedValue
     @Column(name = "id")
@@ -23,7 +23,7 @@ public class Picture {
     @Column(name = "name")
     private String name;
 
-    @ManyToMany(mappedBy = "pictures")
-    private List<Artist> artists;
+    @ManyToMany(mappedBy = "songs")
+    private List<Musician> musicians;
 
 }

@@ -1,12 +1,12 @@
 package com.example.zxc.repository;
 
 
-import com.example.zxc.entity.Artist;
+import com.example.zxc.entity.Musician;
 import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 @Repository
-public interface ArtistRepository extends JpaRepository<Artist, Long> {
+public interface MusicianRepository extends JpaRepository<Musician, Long> {
 
 }
 
