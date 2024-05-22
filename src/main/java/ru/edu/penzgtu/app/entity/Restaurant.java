@@ -1,4 +1,4 @@
-package com.example.zxc.entity;
+package ru.edu.penzgtu.app.entity;
 
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
@@ -13,8 +13,8 @@ import java.util.List;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Entity
-@Table(name = "Songs")
-public class Song {
+@Table(name = "restaurants")
+public class Restaurant {
     @Id
     @GeneratedValue
     @Column(name = "id")
@@ -23,7 +23,7 @@ public class Song {
     @Column(name = "name")
     private String name;
 
-    @ManyToMany(mappedBy = "songs")
-    private List<Musician> musicians;
+    @ManyToMany(mappedBy = "restaurants")
+    private List<Cook> cooks;
 
 }

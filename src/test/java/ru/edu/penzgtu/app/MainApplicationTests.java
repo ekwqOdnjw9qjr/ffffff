@@ -1,10 +1,10 @@
-package com.example.zxc;
+package ru.edu.penzgtu.app;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ZxcApplicationTests {
+class MainApplicationTests {
 
 	@Test
 	void contextLoads() {

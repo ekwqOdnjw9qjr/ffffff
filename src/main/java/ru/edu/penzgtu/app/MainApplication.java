@@ -1,13 +1,13 @@
-package com.example.zxc;
+package ru.edu.penzgtu.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ZxcApplication {
+public class MainApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ZxcApplication.class, args);
+		SpringApplication.run(MainApplication.class, args);
 	}
 
 }
